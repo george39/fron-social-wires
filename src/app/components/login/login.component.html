@@ -2,24 +2,11 @@
 
 <div class="m-2">
 
-    <form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
+    <form #registerForm="ngForm" (ngSubmit)="onSubmit()">
         <div class="d-grid gap-2 col-12 mx-auto">
             <a type="button" class="btn btn-primary" [routerLink]=" [ '/login'] ">Sign in</a>
         </div>
-        <div class="form-group mb-3">
-            <label for="userName">Nick name</label>
-            <input type="text" name="userName" #userName="ngModel" [(ngModel)]="user.userName" placeholder="Nickname" class="form-control" required>
-			<span *ngIf="!userName.valid && userName.touched">
-				El nombre es obligatorio
-			</span>
-        </div>
-        <div class="form-group mb-3">
-            <label for="fullName">Name</label>
-            <input type="text" name="fullName" #fullName="ngModel" [(ngModel)]="user.fullName" placeholder="Full name" class="form-control" required>
-			<span *ngIf="!fullName.valid && fullName.touched">
-				El nombre es obligatorio
-			</span>
-        </div>
+        
         <div class="form-group mb-3">
             <label for="email">Email address</label>
             <input type="text" name="email" #email="ngModel" [(ngModel)]="user.email" placeholder="example@gmail.com" class="form-control" required>
@@ -35,7 +22,7 @@
 			</span>
         </div>
         <div class="d-grid gap-2 col-12 mx-auto">
-            <button type="submit" class="btn btn-primary">Create</button>
+            <button type="submit" class="btn btn-primary">Sing in</button>
         </div>
     </form>
 </div>
