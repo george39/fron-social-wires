@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MessageService } from 'src/app/services/message.service';
 import { UserService } from 'src/app/services/user.service';
-
+import { Messages } from '../../../models/messages'
 @Component({
   selector: 'app-get-messages',
   templateUrl: './get-messages.component.html',
@@ -10,7 +10,7 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class GetMessagesComponent implements OnInit {
     public token: any;
-    public messages: any;
+    public messages: Messages[] | any;
     public url: any;
   constructor(
     private messageService: MessageService,

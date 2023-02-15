@@ -3,8 +3,14 @@
         <div class="card-body">
             <h5 class="card-title">{{message.title}}</h5>        
             <p class="card-text">{{message.message}}</p>
-            
-            <p class="card-text">{{message.date}}</p>
+            <div class="row">
+                <p class="card-text col-6">{{message.date | date: 'dd/MM/yyyy, h:mm'}}</p>
+
+                <div class="col-6" *ngFor="let usuario of [message.user]">
+    
+                    <p class="card-text">{{usuario.fullName}}</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
