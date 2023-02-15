@@ -9,7 +9,8 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
   selector: 'app-login',
   templateUrl: './login.component.html',
   styles: [
-  ]
+  ],
+  providers: [UserService]
 })
 export class LoginComponent implements OnInit {
   public title: any;
@@ -43,7 +44,7 @@ export class LoginComponent implements OnInit {
           localStorage.setItem('identity', JSON.stringify(this.identity));
 
           //Conseguir el token
-          this._userService.signup(this.user, undefined).subscribe(
+          this._userService.signup(this.user, null).subscribe(
             response => {
               this.token = response.token;
 

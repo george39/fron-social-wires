@@ -11,6 +11,7 @@ import { routing, appRoutingProviders } from './app.routing';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { MessagesComponent } from './components/messages/messages.component';
+import { GetMessagesComponent } from './components/messages/get-messages/get-messages.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MessagesComponent } from './components/messages/messages.component';
     RegisterComponent,
     HomeComponent,
     LoginComponent,
-    MessagesComponent
+    MessagesComponent,
+    GetMessagesComponent
   ],
   imports: [
     BrowserModule,

@@ -23,9 +23,9 @@ export class UserService {
   }
 
   // ================================================
-  // CREAR UN USUARIO 
+  // CREAR UN MENSAJE 
   // ================================================
-  register(message: Messages): Observable<any>{
+  message(message: Messages): Observable<any>{
 		let params = JSON.stringify(message);
 		let headers = new HttpHeaders({'Content-Type': 'application/json'});	
 

@@ -4,8 +4,8 @@ import { Routes, RouterModule, Route } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
+import { GetMessagesComponent } from './components/messages/get-messages/get-messages.component';
 import { MessagesComponent } from './components/messages/messages.component';
-
 
 
 
@@ -14,7 +14,8 @@ const appRoutes: Routes = [
     {path: '', component: RegisterComponent},
     {path: 'registro', component: RegisterComponent},
     {path: 'login', component: LoginComponent},
-    {path: 'mensajes', component: MessagesComponent},
+    {path: 'mensajes', component: GetMessagesComponent},
+    {path: 'crear-mensaje', component: MessagesComponent},
 
 ];
 
