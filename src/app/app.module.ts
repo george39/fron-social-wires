@@ -12,6 +12,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { GetMessagesComponent } from './components/messages/get-messages/get-messages.component';
+import { MessagesUserActiveComponent } from './components/messages/messages-user-active/messages-user-active.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { GetMessagesComponent } from './components/messages/get-messages/get-mes
     HomeComponent,
     LoginComponent,
     MessagesComponent,
-    GetMessagesComponent
+    GetMessagesComponent,
+    MessagesUserActiveComponent
   ],
   imports: [
     BrowserModule,

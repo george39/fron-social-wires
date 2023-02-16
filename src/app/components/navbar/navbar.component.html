@@ -10,13 +10,13 @@
             <a class="nav-link" aria-current="page" [routerLink]="['crear-mensaje']">Create Messages</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['mensajes']">My Messages</a>
+            <a class="nav-link" [routerLink]="['mensajes-usuario-activo']">My Messages</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">See all messages</a>
+            <a class="nav-link" [routerLink]="['mensajes']">See all messages</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link pointer"  (click)="logout()">Logout</a>
+            <a class="nav-link" role="button"  (click)="logout()">Logout</a>
           </li>
           
         </ul>
